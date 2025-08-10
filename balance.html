@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Балансы друзей</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .balance {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            border-left: 5px solid #3498db;
+        }
+        
+        .balance-positive {
+            border-left-color: #2ecc71;
+        }
+        
+        .balance-negative {
+            border-left-color: #e74c3c;
+        }
+        
+        .balance-people {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .balance-amount {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .positive {
+            color: #2ecc71;
+        }
+        
+        .negative {
+            color: #e74c3c;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+            text-align: center;
+        }
+        
+        .back-btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Балансы между друзьями</h1>
+        
+        <!-- Пример балансов (вы можете редактировать эти данные) -->
+        <div class="balance balance-positive">
+            <div class="balance-people">Олег Астраханцев → Виктор Ремизов</div>
+            <div class="balance-amount positive">+300.00 ₽</div>
+        </div>
+        
+        <div class="balance balance-negative">
+            <div class="balance-people">Виктор Ремизов → Олег Астраханцев</div>
+            <div class="balance-amount negative">-300.00 ₽</div>
+        </div>
+        
+        <div class="balance balance-positive">
+            <div class="balance-people">Артур Зарихта → Виктор Ремизов</div>
+            <div class="balance-amount positive">+114.00 ₽</div>
+        </div>
+
+        <div class="balance balance-positive">
+            <div class="balance-people">Артур Зарихта</div>
+            <div class="balance-amount positive">0 ₽</div>
+        </div>
+
+        <div class="balance balance-positive">
+            <div class="balance-people">Виктор Ремизов</div>
+            <div class="balance-amount positive">0 ₽</div>
+        </div>
+
+        <div class="balance balance-positive">
+            <div class="balance-people">Олег Астраханцев</div>
+            <div class="balance-amount positive">0 ₽</div>
+        </div>
+
+        <div class="balance balance-positive">
+            <div class="balance-people">Максим Сулимов</div>
+            <div class="balance-amount positive">0 ₽</div>
+        </div>
+        
+        <div style="text-align: center;">
+            <a href="index.html" class="back-btn">Вернуться к управлению долгами</a>
+        </div>
+        
+        <div class="footer">
+            <p>Дружеский банк © 2023</p>
+        </div>
+    </div>
+</body>
+</html>
