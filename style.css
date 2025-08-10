@@ -146,3 +146,27 @@ tr:hover {
 .edit-btn:hover {
     background-color: #d35400;
 }
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 0 10px 20px;
+}
+
+.footer-section h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #34495e;
+    padding-top: 15px;
+    text-align: center;
+}
